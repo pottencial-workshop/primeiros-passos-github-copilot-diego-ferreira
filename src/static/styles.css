@@ -142,3 +142,51 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+/* Section: participantes (novo) */
+.participants-section {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed #e0e0e0;
+}
+
+.participants-section > strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #1a237e;
+  font-size: 14px;
+}
+
+.participants-list {
+  list-style: disc;
+  padding-left: 18px;
+  margin: 0;
+  display: block;
+}
+
+.participants-list li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* destaque sutil para e-mails ou nomes */
+.participants-list li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(135deg,#90caf9,#1976d2);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+  flex-shrink: 0;
+}
+
+/* texto quando não há participantes */
+.participants-list li.empty {
+  color: #777;
+  font-style: italic;
+}
